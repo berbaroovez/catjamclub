@@ -8,10 +8,10 @@ const options = {
       clientId: process.env.DISCORD_CLIENT_ID,
       clientSecret: process.env.DISCORD_CLIENT_SECRET,
     }),
-    // Providers.Twitch({
-    //   clientId: process.env.TWITCH_CLIENT_ID,
-    //   clientSecret: process.env.TWITCH_CLIENT_SECRET,
-    // }),
+    Providers.Twitch({
+      clientId: process.env.TWITCH_CLIENT_ID,
+      clientSecret: process.env.TWITCH_CLIENT_SECRET,
+    }),
   ],
   events: {
     signIn: async (message) => {
